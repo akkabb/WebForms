@@ -1,0 +1,93 @@
+/* lets utilize the latest CSS variable functionality so that we can
+define some root level css rules */
+
+:root {
+    --margin-bottom: 10px;
+    --label-padding-right: 20px;
+    --label-width: 200px;
+    --widget-width: 250px;
+    --border-radius: 4px;
+    --main-padding: 30px;
+    --input-text-size: 14px;
+    --color-main: #5D6063;
+    --bg-color: rgb(230, 230, 230);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.intro_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.build_form {
+    margin-top: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+
+}
+
+.form_head {
+    background-color: var(--bg-color);
+    text-align: center;
+    margin-bottom: 1em;
+    padding: 1em;
+    box-shadow: 0px 1px 2px rgba(0,0,0,0.5);
+}
+.form_personal{
+    text-align: center;
+    background-color: #eee;
+    padding: 1em;
+}
+.form_el{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin: 1em 0;
+}
+.form_el label {
+    margin-bottom: 20px;
+    padding-right: var(--label-padding-right);
+    text-align: right;
+    margin-top: 5px;
+    width: var(--label-width);
+}
+
+.form_el input[type="email"]:invalid {
+    border: 1.5px solid rgb(212, 53, 56);
+    color: rgb(212, 53, 56);
+    box-shadow: none;
+}
+
+.radio-form {
+    border: none;
+    margin-bottom: var(--margin-bottom);
+}
+.radio-form .radio-label {
+    font-size: var(--input-text-size);
+    padding: 2px 20px 0 4px;
+}
+.radio-form legend {
+    width: var(--label-width);
+    padding-right: var(--label-padding-right);
+    text-align: right ;
+    float: left;
+}
+.textarea{
+    display: flex;
+    flex-direction: column;
+}
+input[type=submit] {
+    margin: 1em 9em;
+    padding: 0.5em;
+    width: 50%;
+    background-color: red;
+    color: #fff;
+    border: none;
+}
