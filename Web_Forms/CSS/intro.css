@@ -5,7 +5,7 @@ define some root level css rules */
     --margin-bottom: 10px;
     --label-padding-right: 20px;
     --label-width: 200px;
-    --widget-width: 250px;
+    --widget-width: 180px;
     --border-radius: 4px;
     --main-padding: 30px;
     --input-text-size: 14px;
@@ -79,15 +79,23 @@ define some root level css rules */
     text-align: right ;
     float: left;
 }
-.textarea{
+select {
+    padding: 5px;
+    font-size: 14px;
+    width: var(--widget-width);
+}
+/* .textarea{
     display: flex;
     flex-direction: column;
-}
+} */
 input[type=submit] {
     margin: 1em 9em;
-    padding: 0.5em;
+    padding: 10px 40px;
     width: 50%;
     background-color: red;
     color: #fff;
     border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    font-size: 1em;
 }
