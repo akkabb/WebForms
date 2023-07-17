@@ -24,7 +24,7 @@
             </div>
             <div class="example">
                 <form method="Get" accept-charset="utf8">
-                    Thi is theta : <input type="text" name="yourName">
+                    This is theta : <input type="text" name="yourName">
                     <input type="submit" value="submit">
                 </form>
             </div>
@@ -52,6 +52,87 @@
                     &ltform action="/process_url/" accept="image/jpeg"&gt
                     &ltform&gt
                 </pre>
+            </div>
+        </article>
+        <article class="attribute_action">
+            <h3><span>-</span> action</h3>
+            <div class="format">
+                <pre>
+                    &ltform action="/process_url/" method="post"&gt
+                    &ltform&gt
+                </pre>
+            </div>
+            <div class="example">
+                <form action="process.html" method="Get">
+                    Name : <input type="text" name="fname">
+                    <input type="submit" value="submit">
+                </form>
+            </div>
+        </article>
+        <article class="attribute_method">
+            <h3><span>-</span> method</h3>
+            <p>The "GET" method</p>
+            <div class="format">
+                <pre>
+                    &ltform action="/process_url/" method="get"&gt
+                    &ltform&gt
+                </pre>
+            </div>
+            <div class="example">
+                <form action="/form-process-uri" method="Get">
+                    Name : <input type="text" name="fname">
+                    Message: <input type="text" name="message">
+                    <input type="submit" value="submit">
+                </form>
+            </div>
+        </article>
+        <article class="attribute_method">
+            <p>The "POST" method</p>
+            <div class="format">
+                <pre>
+                    &ltform action="/process_url/" method="post"&gt
+                    &ltform&gt
+                </pre>
+            </div>
+            <div class="example">
+                <form action="/form-process-uri" method="Get">
+                    Name : <input type="text" name="fname">
+                    Message: <input type="text" name="message">
+                    <input type="submit" value="submit">
+                </form>
+            </div>
+        </article>
+        <article class="attribute_method">
+            <p>The "DIALOG" method</p>
+            <div class="format">
+                <pre>
+                    &ltform action="/process_url/" method="dialog"&gt
+                    &ltform&gt
+                </pre>
+            </div>
+            <div class="example">
+                <form action="/form-process-uri" method="Get">
+                    Name : <input type="text" name="fname">
+                    Message: <input type="text" name="message">
+                    <input type="submit" value="submit">
+                </form>
+            </div>
+        </article>
+        <article class="attribute_enctype">
+            <h3><span>-</span> enctype</h3>
+            <div class="format">
+                <pre>
+                    &ltform action="/process_url/" enctype="app/x-www-form-urlencoded"&gt
+                    &ltform&gt
+                </pre>
+            </div>
+            <div class="example">
+                <form action="/form-process-uri" method="Get" enctype="filef  ">
+                    Name : <input type="text" name="fname">
+                    <br><br>
+                    Favorite food: <input type="text" name="fav_food">
+                    <input type="submit" value="submit">
+                </form>
             </div>
         </article>
     </div>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello Wally</h1>
+    <script>
+        //Lets use the standard window object to grab our URL query string
+        let queryString = window.location.search;
+        
+        //Lets use the URLSearchParams API (this is NOT JavaScript -its provided to us by the browser API)
+        let urlParams = new URLSearchParams(queryString);
+
+        // Lets grab our first name variable via the get method
+        let firstName = urlParams.get('fname');
+
+        // Make the hello message dynamic 
+        let headingTag = document.getElementsByTagName('h1')[0];
+        headingTag.innerHTML = `Hello ${firstName}`;
+    </script>
+</body>
+</html>
