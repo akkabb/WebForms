@@ -127,13 +127,73 @@
                 </pre>
             </div>
             <div class="example">
-                <form action="/form-process-uri" method="Get" enctype="filef  ">
+                <form action="/form-process-uri" method="Get" enctype="multipart/form-data">
                     Name : <input type="text" name="fname">
                     <br><br>
                     Favorite food: <input type="text" name="fav_food">
                     <input type="submit" value="submit">
                 </form>
             </div>
+        </article>
+        <article class="attribute_rel">
+            <h3><span>-</span> rel</h3>
+            <div class="format">
+                <pre>
+                    &ltform action="/process_url/" rel="external"&gt
+                    &ltform&gt
+                </pre>
+            </div>
+        </article>
+        <article class="attribute_autocomplete">
+            <h3><span>-</span> autocomplete</h3>
+            <div class="format">
+                <pre>
+                    &ltform action="/process_url/" autocomplete="off"&gt
+                    &ltform&gt
+                </pre>
+            </div>
+            <div class="example">
+                <form>
+                   <label for="fname">First Name</label>
+                   <input type="text" name="first_name" id="fname">
+
+                   <label for="email">Email</label>
+                   <input type="email" name="email" id="email">
+                    <input type="submit" value="submit">
+                </form>
+            </div>
+        </article>
+        <article class="attribute_novalidate">
+            <h3><span>-</span> novalidate</h3>
+            <div class="format">
+                <pre>
+                    &ltform action="/process_url/" novalidate=""&gt
+                    &ltform&gt
+                </pre>
+            </div>
+            <div class="example">
+                <form novalidate>
+                    <!-- You can insert an attribute called formnovalidate BUT ONLY on 3 widgets
+                    - buttons, input:submit and input:image  -->
+                   Insert an even number: <input type="number" name="number" step="2">
+                   <button type="submit">submit</button>
+                </form>
+            </div>
+        </article>
+        <article class="attribute_target">
+            <h3><span>-</span> target</h3>
+            <p class="target_paragraph  ">I DIDN'T WRITE SOMETHING ABOUT THIS ATTRIBUTE BECAUSE CLYDE DOESN'T USE IT WITH A FORM</p>
+            <!-- <div class="format">
+                <pre>
+                    &ltform action="/process_url/" target="_self"&gt
+                    &ltform&gt
+                </pre>
+            </div>
+            <div class="example">
+                <form >
+                  
+                </form>
+            </div> -->
         </article>
     </div>
 </body>

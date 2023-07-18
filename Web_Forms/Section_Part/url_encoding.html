@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/url_encoding.css">
+    <title>Url Encoding</title>
+</head>
+<body>
+    <div class="container_urlEncoding">
+        <h2 class="back_to">
+            <a href="../index.html">
+                Back to Begin
+            </a>
+        </h2>
+        <form>
+            <input type="text" name="message" id="message" value="hello world">
+            <input type="button" value="URL Encode" onclick='urlencode()'>
+        </form>
+        <p id="encodingResult"></p>
+        <script>
+            function urlencode() {
+                let message = document.getElementById('message').value;
+                let encodedMessage = encodeURIComponent(message);
+                document.getElementById('encodingResult').innerHTML = encodedMessage;
+            }
+        </script>
+    </div>
+</body>
+</html>
