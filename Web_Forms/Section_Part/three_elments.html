@@ -13,6 +13,102 @@
                 Back to Begin
             </a>
         </h2>
+        <article>
+            <h3>Examples: </h3>
+            <form>
+                <p>Let's use a div tag to create a name and eamil input form</p>
+                <div>
+                    <label for="name">Name</label>
+                    <input type="text" id="name">
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email">
+                </div>
+                <p>Lets use an ul and li tag to style our form. These are commonly used (but remeber,
+                    we have to remove default styling)</p>
+                <ul>
+                    <li>
+                        <label for="name">Name</label>
+                        <input type="text" id="name">
+                    </li>
+                    <li>
+                        <label for="email">Email</label>
+                        <input type="email" id="email">
+                    </li>
+                </ul>
+            </form>
+        </article>
+        <article class="fieldset_element">
+            <h3>Fieldset</h3>
+            <div class="example">
+                <form action="">
+                    <fieldset>
+                        <legend>Your favorite color</legend>
+                        <p>
+                            <input type="radio" name="color" id="blue">
+                            <label for="blue">Blue</label>
+                        </p>
+                        <p>
+                            <input type="radio" name="color" id="green">
+                            <label for="blue">Green</label>
+                        </p>
+                        <p>
+                            <input type="radio" name="color" id="yellow">
+                            <label for="blue">Yellow</label>
+                        </p>
+                    </fieldset>
+                </form>
+            </div>
+            <h4>attribute for &ltfieldset&gt :</h4>
+            <ul>
+                <li>disabled</li>
+                <li>form</li>
+            </ul>
+        </article>
+        <article class="input_element">
+            <h3>The input tag</h3>
+            <div class="format">
+                &ltinput type="text"&gt;
+            </div>
+            <p>gives this on the browser : </p>
+            <input type="text">
+            <p>differents parameters inside the input</p>
+            <pre>&ltinput type="text" readonly placeholder="" size="20" spellcheck="true"&gt;</pre>
+            
+        </article>
+        <h2>Challenge fieldset :</h2>
+        <div class="challenge">
+            <form action="#">
+                <fieldset>
+                    <legend>Choose your favorite fruit</legend>
+                    <input type="radio" name="fruit" id="">
+                    <label for="cherry">cherry</label>
+                    <br>
+                    <input type="radio" name="fruit" id="">
+                    <label for="Banana">Banana</label>
+                    <br>
+                    <input type="radio" name="fruit" id="">
+                    <label for="strawberry">strawberry</label>
+                </fieldset>
+            </form>
+        </div>
+        <article class="label_element">
+            <div class="example">
+                <h5>Click on the text after the input and see what happen</h5>
+                <p>We don't use the tag &ltlabel&gt</p>
+                <!-- No label -->
+                <input type="checkbox">
+                Are you ready to enter this cool application ?
+                <br>
+                <p>We  use the tag &ltlabel&gt</p>
+                <!-- Let's add a label ... -->
+                <label for="welcome">
+                    <input type="checkbox" id="welcome">
+                Are you ready to enter this cool application ?
+                </label>
+            </div>
+        </article>
     </div>
 </body>
 </html>
