@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/inpuTypes.css">
+    <title>input types</title>
+</head>
+<body>
+    <div class="container_inpuTypes">
+        <h2 class="back_to">
+            <a href="../index.html">
+                Back to Begin
+            </a>
+        </h2>
+        <h2>Differents input types attribute (original ones)</h2>
+        <ul>
+            <li>password</li>
+            <li>radio</li>
+            <li>button</li>
+            <li>checkbox</li>
+            <li>file</li>
+            <li>hidden</li>
+            <li>image</li>
+            <li>reset</li>
+            <li>submit</li>
+        </ul>
+        <article class="passwordAttribute">
+            <h3>password attribute :</h3>
+            <p>Input type="PASSWORD"</p>
+            <div class="examples">
+                <h3>Example 1</h3>
+                <form action="">
+                    <p>Username: <input type="text" name="user" placeholder="Login username"></p>
+                    <p>Password: <input type="password" name="password" placeholder="Choose a strong password"></p>
+                    <p><input type="submit" value="Submit"></p>
+                </form>
+                <h3>Example 2</h3>
+                <form target="_blank">
+                    <p><input type="text" name="user" placeholder="Login username"></p>
+                    <p><input type="password" name="paswword" pattern="[A-Za-z]*[0-9][A-Za-z]*" placeholder="Choose a strong password" title="Please enter a valid paswword. the password must begin with a letter and contain at least one digit" required></p>
+                    <p><input type="submit" value="Submit"></p>
+                </form>
+            </div>
+        </article>
+    </div>
+</body>
+</html>
