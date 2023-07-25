@@ -1,0 +1,21 @@
+.wrapper_emailChallenge {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    font-size: 2rem;
+    line-height: 1.5px;
+}
+
+input {
+    color: #fff;
+    font-size: 2rem;
+    padding: 0.3em; 
+}
+input:invalid {
+    background-color: red;
+}
+input:valid {
+    background: green;
+}

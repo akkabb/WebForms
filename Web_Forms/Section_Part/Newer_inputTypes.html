@@ -14,6 +14,137 @@
             </a>
         </h2>
         <h1>Newer Input Types</h1>
+        <article class="input_email">
+            <h2>Input Email</h2>
+            <div class="format">
+                &ltinput type="email" name="email" id="email"&gt
+            </div>
+            <div class="examples">
+                <p>One example: </p>
+                <form action="">
+                    <label for="email">Enter your email</label>
+                    <input type="email" name="email" id="email">
+                    <button type="submit">Submit</button>
+                </form>
+                <p>An another example: </p>
+                <pre>
+                    &ltform&gt
+                        &ltlabel for="email"&gtEnter your valid gmail accout email&lt/label&gt
+                        &ltinput type="email" name="email" id="email" pattern=".+@gmail.com" title="Please provide a valid gmail"&gt
+                        &ltbutton type="submit"&gtSubmit&lt/button&gt
+                    &lt/form&gt
+                </pre>
+                <form>
+                    <label for="email">Enter your valid gmail accout email</label>
+                    <input type="email" name="email" id="email" pattern=".+@gmail.com" title="Please provide a valid gmail" required>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </article>
+        <article class="input_search">
+            <h2>Input Search</h2>
+            <div class="format">
+                &ltinput type="search"&gt
+            </div>
+            <div class="examples">
+                <p>An example:</p>
+                <input type="search" name="q" placeholder="search">
+                <p><a href="search_style.html">another example</a></p>
+            </div>
+        </article>
+        <article class="input_tel">
+            <h2>Input tel</h2>
+            <div class="format">
+                &ltinput type="tel"&gt
+            </div>
+            <div class="examples">
+                <p>An example:</p>
+                <pre>
+                    &ltinput type="tel" name="tel" id="tel" placeholder="123-456-789" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"&gt
+                    &ltbutton type="submit"&gtSubmit&lt/button&gt  
+                </pre>
+                <form>
+                    <input type="tel" name="tel" id="tel" placeholder="123-456-789" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}">
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </article>
+        <article class="url_type">
+            <h2>Input url</h2>
+            <div class="format">
+                &ltinput type="url"&gt
+            </div>
+        </article>
+        <article class="input_number">
+            <h2>Input number</h2>
+            <div class="format">
+                &ltinput type="number"&gt
+            </div>
+            <div class="examples">
+                <p>An example:</p>
+                <pre>
+                    &ltform&gt
+                        <!-- by default, the step attribute is set to 1 -->
+                        &ltinput type="number" step=1&gt
+                    &lt/form&gt
+                </pre>
+                <form>
+                    <!-- by default, the step attribute is set to 1 -->
+                    <input type="number" step=1>
+                </form>
+                <p>An other example</p>
+                <p>When min, max and step are set, some browsers wil show a narrower input box, as the width of the widest vlid value is limited</p>
+                <pre>
+                    &ltform&gt
+                        &ltinput type="number" min=100 max=999 step=5&gt
+                        &ltbutton type="submit"&gtSubmit&lt/button&gt
+                    &lt/form&gt
+                </pre>
+                <form action="">
+                    <input type="number" min=100 max=999 step=5>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </article>
+        <article class="range_input">
+            <h2>Input range</h2>
+            <div class="format">
+                <pre>
+                    &ltinput type="range"&gt
+                </pre>
+            </div>
+            <div class="examples">
+                <p>An example:</p>
+                <form>
+                    <label for="price">Choose a maximum house price:</label>
+                    <input type="range" name="price" id="price" min="50000" max="500000" step="1000" value="250000">
+                </form>
+                <p><a href="rangeInput.html">An other example where we gonna show the information on the screen</a></p>
+            </div>
+        </article>
+        <article class="input_date">
+            <h2>Input date</h2>
+            <div class="format">
+                <pre>
+                    &ltinput type="date" name="myDate" id="date"&gt
+                </pre>
+            </div>
+            <div class="examples">
+                <p>An example:</p>
+                <form>
+                    <label for="myDate">When are you available to fly to mars ?</label>
+                    <input type="date" name="myDate" id="myDate" min="2025-01-01" max="2030-01-01" value="2025-06-01" step="10">
+                </form>
+            </div>
+        </article>
+        <article class="input_color">
+            <h2>Input color</h2>
+            <div class="format">
+                <pre>
+                    &ltinpt type="color"&gt
+                </pre>
+            </div> 
+        </article>
     </div>
 </body>
 </html>

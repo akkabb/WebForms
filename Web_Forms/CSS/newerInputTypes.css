@@ -1,0 +1,52 @@
+/* Styling search input */
+
+input[type="search"] {
+    font-size: 18px;
+    background: tomato;
+    color: #fff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: 2px solid #000;
+}
+
+input[type="search"]::placeholder {
+    color: #fff;
+    padding-left: 2px;
+}
+
+/* search */
+
+div {
+    display: inline;
+}
+#mySearch {
+    font-size: 2rem;
+    background: brown;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: aqua;
+    border: none;
+}
+#mySearch:invalid ~div::after {
+    content: "\292B";
+    padding-left: 7px;
+    color: red;
+    font-size: 2rem;
+}
+#mySearch:valid ~div::after {
+    content: "✓";
+    padding-left: 7px;
+    color: green;
+    font-size: 2rem;
+}
+.btn_submit {
+    font-size: 2rem;
+}
+
+/* Range Input file styling  */
+.rangeInput {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+/* END Range Input file styling  */

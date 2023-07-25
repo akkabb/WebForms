@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/newerInputTypes.css">
+    <title>Input range</title>
+</head>
+<body>
+    <div class="rangeInput">
+        <h2 class="back_to_begin">
+            <a href="../index.html">
+                Back to Begin
+            </a>
+        </h2>
+        <h2 class="back_to">
+            <a href="Newer_inputTypes.html">
+                Back to InputTypes Content
+            </a>
+        </h2>
+        <form>
+            <label for="price">Choose a maximum house price:</label>
+            <input type="range" name="price" id="price" min="50000" max="500000" step="1000" value="250000">
+            <output class="price-output"></output>
+        </form>
+    </div>
+</body>
+<script>
+    let price = document.querySelector("#price");
+    let output = document.querySelector(".price-output");
+
+    // set defaut value to the output element
+    output.textContent = price.value;
+
+
+    price.addEventListener('input', () =>{
+        output.textContent = price.value;
+    })
+</script>
+</html>
