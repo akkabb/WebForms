@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/inpuTypes.css">
+    <title>Input File</title>
+</head>
+<body>
+    <div class="container_inputFiles">
+        <h2 class="back_to_begin">
+            <a href="../index.html">
+                Back to Begin
+            </a>
+        </h2>
+        <h2 class="back_to">
+            <a href="input_types.html">
+                Back to Input Content
+            </a>
+        </h2>
+        <article class="inputFile">
+            <h3>Input file</h3>
+            <p>Format :</p>
+            <pre>
+                &ltinput type="file" accept="audio/*,video/*,image/*"&gt
+            </pre>
+            <div class="example">
+                <form action="" method="post" enctype="multipart/form-data">
+                    <div class="wrapper_file">
+                        <input type="file" name="file" id="file" class="uploadfile" multiple>
+                        <label for="file">Choose a file</label>
+                    </div>
+                </form>
+            </div>
+        </article>
+    </div>
+    <script>
+        /*
+            This link help me to solve the bug, event if i followed the course 
+            https://bobbyhadz.com/blog/javascript-cannot-read-property-addeventlistener-null
+        */
+        document.addEventListener('DOMContentLoaded', () => {
+            const inputFile = document.getElementById('file');
+            let label = document.querySelector('label');
+            let labelText = label.innerHTML;
+
+            console.log(inputFile);
+
+            // ✅ Works as expected
+            inputFile?.addEventListener('change', (e) => {
+                // console.log('btn clicked');
+                let fileName = " ";
+            // lets use the FileAPI to get the file name and number of files
+            let file = document.getElementById('file').files;
+            if (file.length > 1) {
+                let fileNumber = file.length;
+                label.innerHTML = `Uploaded ${fileNumber} files`;
+            } else {
+                let fileName = file[0].name;
+                label.innerHTML = fileName;
+            }
+            });
+        });
+
+    </script>
+</body>
+</html>

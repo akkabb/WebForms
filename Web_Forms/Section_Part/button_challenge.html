@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/inpuTypes.css">
+    <title>Button Importance challenge</title>
+</head>
+<body class="randomColor" id="randomColor">
+    <div class="container_buttonChallenge">
+        <h2 class="back_to">
+            <a href="../index.html">
+                Back to Begin
+            </a>
+        </h2>
+        <h2 class="back_to">
+            <a href="input_types.html">
+                Back to Input Content
+            </a>
+        </h2>
+        <header>
+            <h1>Defining the type in buttons is important</h1>
+        </header>
+        <section class="inside_form">
+            <form action="" id="formInside">
+                <fieldset class="fieldset_form">
+                    <legend>This is a cool form</legend>
+                    <p>These buttons are inside the form.</p>
+                    <input type="text">
+                    <p>When the form data is submitted, the background colour changes.</p>
+                    <!-- <input type="submit" value="Submit"> -->
+                    <button type="submit" onclick="randomColor()">Type: "submit"</button>
+                    <button type="button">Type: "button"</button>
+                    <button type="reset">Type: "reset"</button>
+                    <button type="none">Type: "none"</button>
+                </fieldset>
+            </form>
+        </section>
+        <section class="outside_form">
+            <fieldset>
+                <legend>These buttons are outside the form</legend>
+                <p>For comparaison, these buttons are outside the form. As such, they won't trigger the submit event. They will do nothing</p>
+                <button type="submit">Type: "submit"</button>
+                <button type="button">Type: "button"</button>
+                <button type="reset">Type: "reset"</button>
+                <button type="none">Type: "none"</button>
+            </fieldset>
+        </section>
+        <section class="explaination">
+            <p>The form above executes a javascript function whenever the submit event is fired. The function changes the background colour of this page. The form contains 4 buttons, each width a different type attribute value: type="submit", type="button", type="reset" and no type attribute. Click each button and notice whic ones trigger the onsubmit event.</p>
+        </section>
+    </div>
+    <script>       
+            // let container = document.getElementsByClassName('container_buttonChallenge');
+            // Berenkan price
+            // TTC 644€  le materiel | TTC 1000€ 
+            // 644 230 = 874
+
+            //Grab our form
+            let form = document.forms[0];
+
+            form.addEventListener("submit", (e) => {
+                e.preventDefault();
+                changeBg();
+            })
+
+            //lets define our handler function
+            let changeBg = function(e) {
+                // let random = "#" + Math.floor(Math.random()*16777215).toString(16);
+                const red = Math.floor(Math.random() * 256);
+		        const green = Math.floor(Math.random() * 256);
+		        const blue = Math.floor(Math.random() * 256);
+                document.body.style.background = "rgb(" + red + ", " + green + ", " + blue + ")";
+            }
+    </script>
+            <!-- function randomColor() {
+                // let randomColor =  Math.floor(Math.random()*16777215).toString(16);
+                const red = Math.floor(Math.random() * 256);
+		        const green = Math.floor(Math.random() * 256);
+		        const blue = Math.floor(Math.random() * 256);
+
+                document.body.style.background = "rgb(" + red + ", " + green + ", " + blue + ")";
+            } -->
+</body>
+</html>

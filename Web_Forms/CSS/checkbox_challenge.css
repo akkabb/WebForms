@@ -1,0 +1,70 @@
+/* Checkbox Challenge */
+
+/* .wrapper_custom input[type="checkbox"] {
+    appearance: none;
+}
+.wrapper_custom input:checked {
+    background-color: blue;
+}
+.wrapper_custom input[type="checkbox"]::after{
+    content: " ";
+    position: relative;
+    width: 25px;
+    height: 25px;
+    background-color: gray;
+    border: 1px solid black;
+    display: inline-block;
+    top: 7px;
+}
+.wrapper_custom input[type="checkbox"]::after:hover{
+    background-color: rgb(237, 234, 234);
+}
+label {
+    margin-left: 1em;
+} */
+
+.wrapper_custom input {
+    display: none; 
+}
+
+span {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border: 1px solid #eee;
+    top: 5px;
+    background-color: gray;
+    position: relative;
+    margin-right: 5px;
+}
+
+/* span:hover {
+    background-color: rgb(237, 234, 234);
+} */
+.wrapper_custom p {
+    position: relative;
+}
+
+p:hover span{
+    background-color: #ccc;
+}
+
+p input:checked~span {
+    background-color: aquamarine;
+}
+
+span::after {
+    display: none;
+    content: " ";
+    position: absolute;
+}
+
+p input:checked~span::after {
+    display: block;
+}
+
+p span::after {
+    content: "\2714";
+    color: #eee;
+    left: 5px;
+}

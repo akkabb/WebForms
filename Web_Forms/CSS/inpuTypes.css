@@ -1,0 +1,95 @@
+/* Challenge button */
+
+body {
+    background-color: color;
+}
+
+.container_buttonChallenge{
+    margin: 0 auto;
+    width: 80%;
+}
+
+header, section {
+    margin-bottom: 2em;
+    background: #eee;
+    padding: 0.5em;
+    border: 1px solid #000;
+    border-radius: 0.5em;
+    box-shadow: 1px 1px 1px 1px;
+}
+
+.fieldset_form {
+    border: dotted;
+    border-color: red;
+}
+
+.explaination {
+    background-color: #eee;
+    padding: 1em;
+} 
+
+/*  design button */
+button {
+    background: #fff;
+    padding: 4px 10px 4px 10px;
+    box-shadow: 1px 1px 1px 1px #000;
+}
+
+button[type="submit"] {
+    color: aqua;
+    border-color: aqua;
+}
+
+button[type="button"] {
+    color: green;
+    border-color: green;
+    margin: 0 .5em;
+}
+
+button[type="reset"] {
+    color: orange;
+    border-color: orange;
+    margin: 0 .5em;
+}
+
+button[type="none"] {
+    color: red;
+    border-color: red;
+}
+
+/* :checked pseudo class part */
+
+input[type="checkbox"] + label {
+    color: #ccc;
+    font-style: italic;
+}
+
+input:checked + label {
+    color: hotpink;
+    font-style: normal;
+    box-shadow: 1px 2px 3px hotpink;
+}
+
+p {
+    font-size: 0.7em;
+    color: #333;
+}
+
+/* Food Image */
+#image {
+    width: 300px;
+    height: 300px;
+}
+
+/* Style The input file */
+.uploadfile {
+    display: none;
+}
+.uploadfile + label {
+    font-weight: 700;
+    background-color: red;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    display: inline-block;
+}
